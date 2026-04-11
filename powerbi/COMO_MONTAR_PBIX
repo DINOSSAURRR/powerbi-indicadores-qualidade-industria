@@ -1,0 +1,26 @@
+# Como montar o PBIX
+
+Este diretório contém o material-base para você montá-lo em poucos minutos no Power BI Desktop.
+
+## Passo a passo
+1. Abra o Power BI Desktop.
+2. Clique em **Obter Dados > Excel**.
+3. Importe `../data/base_indicadores.xlsx`.
+4. Carregue todas as abas, exceto se quiser começar apenas pelas fatos principais.
+5. No **Modelo**, crie os relacionamentos conforme descrito em `../docs/modelo_dados.md`.
+6. Crie as medidas do arquivo `MEDIDAS_DAX.md`.
+7. Monte as páginas:
+   - Executivo
+   - Comercial/Fiscal
+   - SST
+   - Suprimentos e Qualidade
+   - Energia
+   - RH
+
+## Sugestão de páginas
+- **Executivo**: cards com os 10 principais indicadores
+- **Comercial/Fiscal**: faturamento, NF emitidas e orçamentos
+- **SST**: CATs por setor e funcionário
+- **Suprimentos e Qualidade**: compras, recusas no recebimento, fornecedores
+- **Energia**: valor e consumo por competência
+- **RH**: admissões, demissões e tabela nominal
